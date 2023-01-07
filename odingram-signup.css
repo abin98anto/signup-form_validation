@@ -1,7 +1,59 @@
-  /* From here we are doing the proper css styles */
-:root{
-    background-color: gray;
+:root,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
     margin: 0px;
     padding: 0px;
     --bgimage: url("https://pixabay.com/get/g1424a1f52d8af3a6f73476e39a6635491d28dd5a5bf61b77adf60f13029c56bc47738434452f6b103dd101cdb5250807432b602e9fd6dd5c32bda792b893b6981b62dce6d8461f21478f1de0688aa977_1920.jpg");
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+.webody{
+  display: flex;
+}
+
+#sideHeader{
+  margin: 0px;
+  padding: 0px;
+  width: 30%;
+  height: 100vh;
+  background-image: url(images/background-image2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#sideHeader h1{
+  margin-left: 160px;
+  font-size: 70px;
+  margin: 7.5px;
+  font-family: "norse-bold", sans-serif;
+}
+#hImage img{
+  margin-top: 10px;
+  margin-left: 130px;
+  height: 100px;
+  width: 50px;
+}
+#icon{
+  margin-top: 200px;
+  font-size: 50px;
+  display: flex;
+  background-color: rgba(0, 7, 3, 0.5);
+}
+
+.form-left {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.forms:after {
+  content: "";
+  display: table;
+  clear: both;
 }
