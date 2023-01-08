@@ -2,10 +2,14 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: whitesmoke;
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
     --bgimage: url("https://pixabay.com/get/g1424a1f52d8af3a6f73476e39a6635491d28dd5a5bf61b77adf60f13029c56bc47738434452f6b103dd101cdb5250807432b602e9fd6dd5c32bda792b893b6981b62dce6d8461f21478f1de0688aa977_1920.jpg");
+}
+h2 {
+  margin: 0px;
 }
 
 @font-face {
@@ -27,7 +31,8 @@ body{
   background-repeat: no-repeat;
   color: white;
 }
-#sideHeader h1{
+#hHeading h1{
+  padding-right: 100px;
   margin-left: 160px;
   font-size: 70px;
   margin: 7.5px;
@@ -45,15 +50,38 @@ body{
   display: flex;
   background-color: rgba(0, 7, 3, 0.5);
 }
-
-.form-left {
+/* forms side styling from here */
+#signupSide{
+  height: 100%;
+  width: 100%;
+}
+#form-left{
   float: left;
-  width: 50%;
+  margin-right: 50px;
+}
+#forms{
+  border-radius: 8px;
+  background-color: white;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  box-shadow: 0px 10px 5px lightgray, 0px -10px 5px lightgray;
+}
+.paragraph{
+  padding-top: 140px;
+  padding-left: 50px;
+}
+.lastdiv{
+  padding-top: 30px;
+}
+.lastdiv button, p {
+  margin-left: 50px;
 }
 
-/* Clear floats after the columns */
-.forms:after {
-  content: "";
-  display: table;
-  clear: both;
+button{
+  background-color: #596D48;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  padding: 5px;
 }
