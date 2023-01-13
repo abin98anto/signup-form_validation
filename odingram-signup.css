@@ -82,13 +82,17 @@ button{
   background-color: #596D48;
   border-radius: 5px;
   color: white;
-  height: 30px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
   padding: 5px;
 }
 
-.inputs{
+.inputs{  /*the div that wraps all input divs */
   display: grid;
-  grid-template-columns: repeat(2,230px);
-  row-gap: 20px; 
+  grid-template-columns: repeat(2,230px); /*creates a 2, 230px wide columns */
+  row-gap: 20px; /*creates a distance between the rows*/
 }
 /* error settings */
