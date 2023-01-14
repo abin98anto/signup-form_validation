@@ -6,7 +6,6 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    --bgimage: url("https://pixabay.com/get/g1424a1f52d8af3a6f73476e39a6635491d28dd5a5bf61b77adf60f13029c56bc47738434452f6b103dd101cdb5250807432b602e9fd6dd5c32bda792b893b6981b62dce6d8461f21478f1de0688aa977_1920.jpg");
 }
 h2 {
   margin: 0px;
@@ -78,7 +77,7 @@ h2 {
   margin-left: 50px;
 }
 
-button{
+button{ /*"create account" button styling*/ 
   background-color: #596D48;
   border-radius: 5px;
   color: white;
@@ -87,12 +86,35 @@ button{
   font-weight: bold;
   height: 40px;
   width: 200px;
-  padding: 5px;
 }
 
 .inputs{  /*the div that wraps all input divs */
   display: grid;
-  grid-template-columns: repeat(2,230px); /*creates a 2, 230px wide columns */
+  grid-template-columns: repeat(2,300px); /*creates a 2, 300px wide columns */
   row-gap: 20px; /*creates a distance between the rows*/
 }
+input{ /*stlyes the input field*/
+  outline: none;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 15px;
+  height: 25px;
+  width: 250px;
+  outline-color: rgba(255,255,255,0.5);
+  outline-width: 1px;
+}
+label{ /*stlyes the label*/
+  font-size: 15px;
+  font-weight: bold;
+}
+input:focus{ /*stlyes the input field when in focus*/
+  transform: scale(1.05);
+  border: 1px solid lightskyblue;
+  box-shadow: 0 0 5px lightblue;
+}
+/* #password-error{
+  color: red;
+  font-size: 10px;
+  display: none;
+} */
 /* error settings */
